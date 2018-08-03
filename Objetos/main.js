@@ -107,29 +107,39 @@ console.log(avr(arr));
 
 // ---------- Empleados --------
 
-let nombres = [
-    ["juan",100],
-    ["Enrique",500],
-    ["Bryan",800],
-    ["Mauricio",100],
-    ["Lalo",20],
-    ["Beto",30],
-    ["Charly",900],
-    ["Josue",350]
-];
+// let arra = [
+//     "Enrique",
+//     100,
+//     "Juan",
+//     50,
+//     "Bryan",
+//     400,
+//     "Carlos",
+//     500,
+//     "Fernando",
+//     350,
+//     "Arturo",
+//     700,
+//     "Alonso",
+//     600,
+//     "Beto",
+//     400
+// ];
 
-let compara = (nombres) => {
-    let sel = [nombres[0][0],nombres[0][1]];
-    console.log(sel);
-    for(let i = 0; i < nombres.length; i++){
-        if(nombres[i][1] < nombres[i+1][1]){
-            sel.push(nombres[i+1][0],nombres[i+1][1]);
-        } 
-    }
-    return sel;
-}
+// let mayor = arra[1];
+// let resul = ""
 
-console.log(compara(nombres));
+// let compara = (arra) => {
+//     for(let i = 3; i <= arra.length; i+2){
+//         if(mayor < arra[i]){
+//             mayor = i;
+//         }
+//     }
+//     resul = `${arra[mayor-1]} ${arra[mayor]}`;
+//     return resul;
+// }  
+//  console.log(compara(arra));
+
 // ---------------- Funcion N parametros ----------
 
 let amigos = (a,b,x,d,c) => {}
