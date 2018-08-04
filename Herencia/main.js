@@ -228,3 +228,54 @@ let build = new Edificio(100,500,20,"Eligio Ancona 4","40 metros",20,15);
 
 console.log(house.calcularSQM());
 console.log(build.calcularSQM());
+
+
+class Maestro {
+    constructor(materia,calificaciones){
+        this.materia = materia;
+        this.calificaciones = calificaciones;
+    }   
+
+    getAverage(){
+        let avr = 0;
+        for(let i = 0; i < this.calificaciones.length; i++){
+            avr += this.calificaciones[i];
+        }
+
+        return avr/this.calificaciones.length;
+    }
+}
+
+class MaestroMusica extends Maestro {
+    constructor(materia,calificaciones){
+        super(materia);
+        this.calificaciones = calificaciones;
+
+    }
+}
+class MaestroFisica extends Maestro {
+    constructor(materia,calificaciones){
+        super(materia);
+        this.calificaciones = calificaciones;
+    }
+}
+class MaestroMatematicas extends Maestro {
+    constructor(materia,calificaciones){
+        super(materia);
+        this.calificaciones = calificaciones;
+    }
+}
+
+let calMusic = [9,4,7,8,9,6,10,2,10,10,7,6];
+let calMat  = [10,4,10,10,9,8,2,1,7];
+let calFis = [10,10,3,4,6,7,8,4,10];
+
+let musica = new MaestroMusica("Musica",calMusic);
+let mate = new MaestroMatematicas("Matematicas",calMat);
+let fisica = new MaestroFisica("Fisica",calFis)
+console.log(musica.materia);
+console.log(musica.getAverage().toFixed(2));
+console.log(mate.materia);
+console.log(mate.getAverage().toFixed(2));
+console.log(fisica.materia);
+console.log(fisica.getAverage().toFixed(2));
