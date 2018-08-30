@@ -1,0 +1,22 @@
+.navBarPer {
+    background : #00418C;
+}
+
+.btn-SignUS  {
+    background: #B21A1A;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.btn-SignUS:hover {
+    background: #389DBC;
+}
+
+.btn-LogIn {
+    background: #13AFAF;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-LogIn:hover {
+    background: #B21A1A
+}
